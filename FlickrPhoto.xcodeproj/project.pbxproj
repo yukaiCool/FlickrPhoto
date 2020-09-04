@@ -22,15 +22,18 @@
 		164E96B92501DEB8009D0846 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96B82501DEB8009D0846 /* Extension+UIViewController.swift */; };
 		164E96BB2501DF11009D0846 /* SearchInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BA2501DF11009D0846 /* SearchInputViewController.swift */; };
 		164E96BD2501DF28009D0846 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BC2501DF28009D0846 /* SearchResultViewController.swift */; };
-		164E96BF2501DF3C009D0846 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BE2501DF3C009D0846 /* FavoritesViewController.swift */; };
+		164E96BF2501DF3C009D0846 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BE2501DF3C009D0846 /* FavouritesViewController.swift */; };
 		164E96C12501DF4A009D0846 /* SearchInputViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C02501DF4A009D0846 /* SearchInputViewControllerViewModel.swift */; };
 		164E96C32501DF58009D0846 /* SearchResultViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C22501DF58009D0846 /* SearchResultViewControllerViewModel.swift */; };
-		164E96C52501DF67009D0846 /* FavoritesViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C42501DF67009D0846 /* FavoritesViewControllerViewModel.swift */; };
+		164E96C52501DF67009D0846 /* FavouritesViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C42501DF67009D0846 /* FavouritesViewControllerViewModel.swift */; };
 		164E96C82501E358009D0846 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 164E96CA2501E358009D0846 /* Localizable.strings */; };
 		164E96D02501F0B4009D0846 /* SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96CE2501F0B4009D0846 /* SearchResultCollectionViewCell.swift */; };
 		164E96D12501F0B4009D0846 /* SearchResultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 164E96CF2501F0B4009D0846 /* SearchResultCollectionViewCell.xib */; };
 		164E96D32501F0D9009D0846 /* Extension+UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96D22501F0D9009D0846 /* Extension+UICollectionViewCell.swift */; };
 		164E96D525020E71009D0846 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96D425020E71009D0846 /* Extension+UIColor.swift */; };
+		164E96D725021F6C009D0846 /* UserDefaultsTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96D625021F6C009D0846 /* UserDefaultsTool.swift */; };
+		164E96D925022BD8009D0846 /* Extension+Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96D825022BD8009D0846 /* Extension+Notification.swift */; };
+		164E96DB250230CF009D0846 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96DA250230CF009D0846 /* TabBarViewController.swift */; };
 		C5F73226BFF598D56F50E319 /* Pods_FlickrPhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FF491B2E3140E9A7F947D1 /* Pods_FlickrPhoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +55,10 @@
 		164E96B82501DEB8009D0846 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		164E96BA2501DF11009D0846 /* SearchInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputViewController.swift; sourceTree = "<group>"; };
 		164E96BC2501DF28009D0846 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
-		164E96BE2501DF3C009D0846 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		164E96BE2501DF3C009D0846 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		164E96C02501DF4A009D0846 /* SearchInputViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputViewControllerViewModel.swift; sourceTree = "<group>"; };
 		164E96C22501DF58009D0846 /* SearchResultViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewControllerViewModel.swift; sourceTree = "<group>"; };
-		164E96C42501DF67009D0846 /* FavoritesViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerViewModel.swift; sourceTree = "<group>"; };
+		164E96C42501DF67009D0846 /* FavouritesViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewControllerViewModel.swift; sourceTree = "<group>"; };
 		164E96C92501E358009D0846 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		164E96CB2501E397009D0846 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
 		164E96CC2501E397009D0846 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -64,6 +67,9 @@
 		164E96CF2501F0B4009D0846 /* SearchResultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCollectionViewCell.xib; sourceTree = "<group>"; };
 		164E96D22501F0D9009D0846 /* Extension+UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionViewCell.swift"; sourceTree = "<group>"; };
 		164E96D425020E71009D0846 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		164E96D625021F6C009D0846 /* UserDefaultsTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsTool.swift; sourceTree = "<group>"; };
+		164E96D825022BD8009D0846 /* Extension+Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Notification.swift"; sourceTree = "<group>"; };
+		164E96DA250230CF009D0846 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3B3B0286C994B0376D2981C1 /* Pods-FlickrPhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrPhoto.release.xcconfig"; path = "Target Support Files/Pods-FlickrPhoto/Pods-FlickrPhoto.release.xcconfig"; sourceTree = "<group>"; };
 		59FF491B2E3140E9A7F947D1 /* Pods_FlickrPhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickrPhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0DC1160CA4F3B794905C8F /* Pods-FlickrPhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickrPhoto.debug.xcconfig"; path = "Target Support Files/Pods-FlickrPhoto/Pods-FlickrPhoto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,7 +131,7 @@
 			children = (
 				164E96C02501DF4A009D0846 /* SearchInputViewControllerViewModel.swift */,
 				164E96C22501DF58009D0846 /* SearchResultViewControllerViewModel.swift */,
-				164E96C42501DF67009D0846 /* FavoritesViewControllerViewModel.swift */,
+				164E96C42501DF67009D0846 /* FavouritesViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -133,9 +139,10 @@
 		164E96AA24FF6097009D0846 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				164E96DA250230CF009D0846 /* TabBarViewController.swift */,
 				164E96BA2501DF11009D0846 /* SearchInputViewController.swift */,
 				164E96BC2501DF28009D0846 /* SearchResultViewController.swift */,
-				164E96BE2501DF3C009D0846 /* FavoritesViewController.swift */,
+				164E96BE2501DF3C009D0846 /* FavouritesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +164,8 @@
 				164E96B82501DEB8009D0846 /* Extension+UIViewController.swift */,
 				164E96D22501F0D9009D0846 /* Extension+UICollectionViewCell.swift */,
 				164E96D425020E71009D0846 /* Extension+UIColor.swift */,
+				164E96D825022BD8009D0846 /* Extension+Notification.swift */,
+				164E96D625021F6C009D0846 /* UserDefaultsTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -306,11 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				164E96BF2501DF3C009D0846 /* FavoritesViewController.swift in Sources */,
+				164E96BF2501DF3C009D0846 /* FavouritesViewController.swift in Sources */,
 				164E96B724FF615E009D0846 /* Photos.swift in Sources */,
+				164E96DB250230CF009D0846 /* TabBarViewController.swift in Sources */,
 				164E96C32501DF58009D0846 /* SearchResultViewControllerViewModel.swift in Sources */,
 				164E96B524FF6153009D0846 /* Extension+String.swift in Sources */,
 				164E96D32501F0D9009D0846 /* Extension+UICollectionViewCell.swift in Sources */,
+				164E96D725021F6C009D0846 /* UserDefaultsTool.swift in Sources */,
 				164E96BB2501DF11009D0846 /* SearchInputViewController.swift in Sources */,
 				164E96C12501DF4A009D0846 /* SearchInputViewControllerViewModel.swift in Sources */,
 				164E96B124FF6134009D0846 /* FilckrPhotoAPI.swift in Sources */,
@@ -323,8 +334,9 @@
 				164E96B324FF613E009D0846 /* ConvertResult.swift in Sources */,
 				164E96B92501DEB8009D0846 /* Extension+UIViewController.swift in Sources */,
 				164E96BD2501DF28009D0846 /* SearchResultViewController.swift in Sources */,
+				164E96D925022BD8009D0846 /* Extension+Notification.swift in Sources */,
 				164BC4A924FF470F0092FD43 /* SceneDelegate.swift in Sources */,
-				164E96C52501DF67009D0846 /* FavoritesViewControllerViewModel.swift in Sources */,
+				164E96C52501DF67009D0846 /* FavouritesViewControllerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

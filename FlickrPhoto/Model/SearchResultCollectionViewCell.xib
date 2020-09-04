@@ -25,6 +25,17 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYh-aj-Erl">
+                        <rect key="frame" x="194" y="10" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="610-AR-0L8"/>
+                            <constraint firstAttribute="height" constant="30" id="SN5-Qr-TP6"/>
+                        </constraints>
+                        <state key="normal" image="FavoriteClose"/>
+                        <connections>
+                            <action selector="clickFavorite:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Xhb-XR-itU"/>
+                        </connections>
+                    </button>
                 </subviews>
             </view>
             <constraints>
@@ -33,16 +44,22 @@
                 <constraint firstItem="iiJ-8b-gNb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="QAe-py-MSp"/>
                 <constraint firstItem="iiJ-8b-gNb" firstAttribute="top" secondItem="DBj-1G-lJO" secondAttribute="bottom" constant="5" id="TOz-tZ-Cca"/>
                 <constraint firstAttribute="trailing" secondItem="iiJ-8b-gNb" secondAttribute="trailing" constant="5" id="YbK-mO-QK6"/>
+                <constraint firstItem="TYh-aj-Erl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="ccF-ky-G9K"/>
                 <constraint firstItem="DBj-1G-lJO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fIh-jg-gch"/>
+                <constraint firstAttribute="trailing" secondItem="TYh-aj-Erl" secondAttribute="trailing" constant="10" id="jBO-lb-x6O"/>
                 <constraint firstItem="DBj-1G-lJO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="s4b-Mc-iZ7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="234" height="247"/>
             <connections>
+                <outlet property="imageFavorite" destination="TYh-aj-Erl" id="Pbs-sY-wui"/>
                 <outlet property="imagePhoto" destination="DBj-1G-lJO" id="LPx-QU-yKL"/>
                 <outlet property="labelTitle" destination="iiJ-8b-gNb" id="uMs-rL-xRw"/>
             </connections>
             <point key="canvasLocation" x="4.3478260869565224" y="210.60267857142856"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="FavoriteClose" width="128" height="128"/>
+    </resources>
 </document>

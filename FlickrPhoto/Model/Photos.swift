@@ -16,7 +16,7 @@ struct Photos {
     var photo: [Photo] = [Photo]()
 }
 
-struct Photo {
+struct Photo: Codable {
     var id: String = ""
     var owner: String = ""
     var secret: String = ""
@@ -26,7 +26,7 @@ struct Photo {
     var ispublic: Bool = true
     var isfriend: Bool = true
     var isfamily: Bool = true
-    var imageUrl: URL {
-        return URL(string: "https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret)_m.jpg")!
+    var imageUrl: String {
+        return "https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret)_m.jpg"
     }
 }

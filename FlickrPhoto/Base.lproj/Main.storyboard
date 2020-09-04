@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Title-->
+        <!--搜尋結果 xx-->
         <scene sceneID="o3R-aa-hJP">
             <objects>
                 <viewController storyboardIdentifier="SearchResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pb6-Nd-vsp" customClass="SearchResultViewController" customModule="FlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lWP-56-cGD"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="vod-k1-6Jb"/>
+                    <navigationItem key="navigationItem" title="搜尋結果 xx" id="vod-k1-6Jb"/>
                     <connections>
                         <outlet property="collectionView" destination="OFS-rA-jIV" id="r6l-hS-izL"/>
                         <outlet property="navigationItemTitle" destination="vod-k1-6Jb" id="hVc-jp-zjX"/>
@@ -56,17 +56,49 @@
             </objects>
             <point key="canvasLocation" x="2442.0289855072465" y="-109.15178571428571"/>
         </scene>
-        <!--Favorites View Controller-->
+        <!--Title-->
         <scene sceneID="Dvq-cg-frz">
             <objects>
-                <viewController storyboardIdentifier="FavoritesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zqa-qI-Qp9" customClass="FavoritesViewController" customModule="FlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoritesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zqa-qI-Qp9" customClass="FavouritesViewController" customModule="FlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JGr-pd-9NE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-Rm-WTV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1JU-vg-B7L">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ResultCell" id="H34-pB-fVp" customClass="SearchResultCollectionViewCell" customModule="FlickrPhoto" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HIb-Cs-qhr">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ahu-Gs-xF3" firstAttribute="trailing" secondItem="WWe-Rm-WTV" secondAttribute="trailing" id="BtO-bV-vV1"/>
+                            <constraint firstItem="WWe-Rm-WTV" firstAttribute="leading" secondItem="ahu-Gs-xF3" secondAttribute="leading" id="C3K-ri-6iU"/>
+                            <constraint firstItem="ahu-Gs-xF3" firstAttribute="bottom" secondItem="WWe-Rm-WTV" secondAttribute="bottom" id="MGb-Yd-nNG"/>
+                            <constraint firstItem="WWe-Rm-WTV" firstAttribute="top" secondItem="ahu-Gs-xF3" secondAttribute="top" id="f9y-wB-KJI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ahu-Gs-xF3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="lvW-WG-yfU"/>
+                    <navigationItem key="navigationItem" title="Title" id="EM2-DF-eS9"/>
+                    <connections>
+                        <outlet property="collectionView" destination="WWe-Rm-WTV" id="Vy8-O9-Ubu"/>
+                        <outlet property="navigationItemTitle" destination="EM2-DF-eS9" id="xse-gF-pkM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ail-3K-xDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1573.913043478261" y="-109.15178571428571"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="EBr-Er-rzo">
             <objects>
-                <tabBarController id="Mcx-0W-ZZe" sceneMemberID="viewController">
+                <tabBarController id="Mcx-0W-ZZe" customClass="TabBarViewController" customModule="FlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d0c-Ds-cE2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

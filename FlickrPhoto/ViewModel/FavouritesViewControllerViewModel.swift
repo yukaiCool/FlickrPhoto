@@ -1,5 +1,5 @@
 //
-//  FavoritesViewControllerViewModel.swift
+//  FavouritesViewControllerViewModel.swift
 //  FlickrPhoto
 //
 //  Created by 李御楷 on 2020/9/4.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-class FavoritesViewControllerViewModel {
-    
+class FavouritesViewControllerViewModel {
+    // Model
+    var photosModel: Photos = Photos()
 }

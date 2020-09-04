@@ -31,7 +31,7 @@ class SearchResultViewControllerViewModel {
     
     // MARK: 檢查是否需要加載圖片
     func checkDownload(indexPath: IndexPath) {
-        guard !isDownloading, indexPath.row == (photosModel.photo.count - 1) else { return }
+        guard !isDownloading, indexPath.row == (photosModel.photo.count - 1), photosModel.page+1 <= photosModel.pages else { return }
         getPhoto(model: photosModel, page: photosModel.page+1, perPage: photosModel.perpage)
     }
 }
