@@ -10,4 +10,7 @@ import Foundation
 
 class SearchResultViewControllerViewModel {
     
+    // Model
+    var photosModel: Photos = Photos()
+    
 }

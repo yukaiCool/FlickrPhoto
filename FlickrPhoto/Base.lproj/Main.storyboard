@@ -39,18 +39,64 @@
             </objects>
             <point key="canvasLocation" x="1573.913043478261" y="538.39285714285711"/>
         </scene>
-        <!--Search Input View Controller-->
+        <!--搜尋輸入頁-->
         <scene sceneID="rgB-KW-dP7">
             <objects>
                 <viewController storyboardIdentifier="SearchInputViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xAP-M5-dut" customClass="SearchInputViewController" customModule="FlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S0R-uY-7aW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="欲搜尋數量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AbO-DE-TQ5">
+                                <rect key="frame" x="30" y="340.5" width="354" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="tMm-cB-Bxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="每頁呈現數量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLv-Zw-Wol">
+                                <rect key="frame" x="30" y="425.5" width="354" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2rD-tq-Z3g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gw9-EE-n3v">
+                                <rect key="frame" x="30" y="510.5" width="354" height="45"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="z5l-hV-MhG"/>
+                                </constraints>
+                                <state key="normal" title="搜尋">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchAction:" destination="xAP-M5-dut" eventType="touchUpInside" id="Kpc-c6-lZj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FYK-Eo-O8j" firstAttribute="trailing" secondItem="HLv-Zw-Wol" secondAttribute="trailing" constant="30" id="4Z5-qC-4uC"/>
+                            <constraint firstItem="HLv-Zw-Wol" firstAttribute="top" secondItem="AbO-DE-TQ5" secondAttribute="bottom" constant="40" id="JsR-XD-9Wv"/>
+                            <constraint firstItem="AbO-DE-TQ5" firstAttribute="leading" secondItem="FYK-Eo-O8j" secondAttribute="leading" constant="30" id="LTH-w9-m9l"/>
+                            <constraint firstItem="HLv-Zw-Wol" firstAttribute="centerY" secondItem="S0R-uY-7aW" secondAttribute="centerY" id="OAV-nI-vXe"/>
+                            <constraint firstItem="Gw9-EE-n3v" firstAttribute="top" secondItem="HLv-Zw-Wol" secondAttribute="bottom" constant="40" id="Slh-oj-ilX"/>
+                            <constraint firstItem="FYK-Eo-O8j" firstAttribute="trailing" secondItem="AbO-DE-TQ5" secondAttribute="trailing" constant="30" id="ZUc-6R-zlK"/>
+                            <constraint firstItem="FYK-Eo-O8j" firstAttribute="trailing" secondItem="Gw9-EE-n3v" secondAttribute="trailing" constant="30" id="d4t-lw-UZk"/>
+                            <constraint firstItem="HLv-Zw-Wol" firstAttribute="leading" secondItem="FYK-Eo-O8j" secondAttribute="leading" constant="30" id="fGN-UG-D9t"/>
+                            <constraint firstItem="Gw9-EE-n3v" firstAttribute="leading" secondItem="FYK-Eo-O8j" secondAttribute="leading" constant="30" id="fns-93-Y1X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FYK-Eo-O8j"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gIl-mb-OgN"/>
+                    <navigationItem key="navigationItem" title="搜尋輸入頁" id="gDM-mf-x3D"/>
                     <connections>
+                        <outlet property="buttonSearch" destination="Gw9-EE-n3v" id="Xvp-km-J37"/>
+                        <outlet property="navigationItemTitle" destination="gDM-mf-x3D" id="T29-dA-moC"/>
+                        <outlet property="textFieldSearchCount" destination="HLv-Zw-Wol" id="YoB-AQ-C5h"/>
+                        <outlet property="textFieldSearchTitle" destination="AbO-DE-TQ5" id="UGE-yd-H2G"/>
                         <segue destination="pb6-Nd-vsp" kind="show" id="olj-Mh-vIZ"/>
                     </connections>
                 </viewController>

@@ -1,0 +1,18 @@
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "9wy-y2-WSg"; */
+"9wy-y2-WSg.title" = "Favorites";
+
+/* Class = "UITextField"; placeholder = "欲搜尋數量"; ObjectID = "AbO-DE-TQ5"; */
+"AbO-DE-TQ5.placeholder" = "欲搜尋數量";
+
+/* Class = "UIButton"; normalTitle = "搜尋"; ObjectID = "Gw9-EE-n3v"; */
+"Gw9-EE-n3v.normalTitle" = "搜尋";
+
+/* Class = "UITextField"; placeholder = "每頁呈現數量"; ObjectID = "HLv-Zw-Wol"; */
+"HLv-Zw-Wol.placeholder" = "每頁呈現數量";
+
+/* Class = "UITabBarItem"; title = "Featured"; ObjectID = "YB1-CA-93l"; */
+"YB1-CA-93l.title" = "Featured";
+
+/* Class = "UINavigationItem"; title = "搜尋輸入頁"; ObjectID = "gDM-mf-x3D"; */
+"gDM-mf-x3D.title" = "搜尋輸入頁";

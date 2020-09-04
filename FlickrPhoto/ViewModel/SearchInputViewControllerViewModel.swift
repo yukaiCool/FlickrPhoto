@@ -10,4 +10,14 @@ import Foundation
 
 class SearchInputViewControllerViewModel {
     
+    // on completion outputs
+    var onGetEnd: ((Photos) -> Void)?
+    
+    // MARK: get photo
+    func getPhoto(searchName: String, perPage: Int) {
+        FilckrPhotpAPI.getPhoto(model: Photos(),searchName: searchName, page: 1, perPage: perPage) { (model) in
+            self.onGetEnd?(model)
+        }
+    }
+    
 }

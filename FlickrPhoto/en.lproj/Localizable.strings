@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  FlickrPhoto
+
+  Created by 李御楷 on 2020/9/4.
+  Copyright © 2020 李御楷. All rights reserved.
+*/
+
+// MARK: - ---- 搜尋輸入頁面 ----
+"NavigationItemSearchInputTitle" = "Search Input Page";
+"TextFieldSearchInputPlaceHolderTitle" = "To search for content";
+"TextFieldSearchInputPlaceHolderCount" = "Number of renderings per page";
+"ButtonSearchInputSearch" = "Search";
+
+// MARK: - ---- 搜尋結果頁面 ----
+"" = "";
+
+// MARK: - ---- 我的最愛頁面 ----
+"" = "";
