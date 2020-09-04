@@ -14,6 +14,10 @@ class SearchResultViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     let viewModel = SearchResultViewControllerViewModel()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        collectionView.reloadData()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
