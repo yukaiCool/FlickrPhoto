@@ -10,8 +10,8 @@ import Foundation
 
 class ConvertResult {
     // Filckr photo json to model
-    class func photoToModel(result: [String:Any]) -> Photos {
-        var model = Photos()
+    class func photoToModel(model: Photos, result: [String:Any]) -> Photos {
+        var model = model
         model.page = result["page"] as? Int ?? 0
         model.pages = result["pages"] as? Int ?? 0
         model.perpage = result["perpage"] as? Int ?? 0
