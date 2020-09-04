@@ -19,6 +19,13 @@
 		164E96B324FF613E009D0846 /* ConvertResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96B224FF613E009D0846 /* ConvertResult.swift */; };
 		164E96B524FF6153009D0846 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96B424FF6153009D0846 /* Extension+String.swift */; };
 		164E96B724FF615E009D0846 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96B624FF615E009D0846 /* Photos.swift */; };
+		164E96B92501DEB8009D0846 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96B82501DEB8009D0846 /* Extension+UIViewController.swift */; };
+		164E96BB2501DF11009D0846 /* SearchInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BA2501DF11009D0846 /* SearchInputViewController.swift */; };
+		164E96BD2501DF28009D0846 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BC2501DF28009D0846 /* SearchResultViewController.swift */; };
+		164E96BF2501DF3C009D0846 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96BE2501DF3C009D0846 /* FavoritesViewController.swift */; };
+		164E96C12501DF4A009D0846 /* SearchInputViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C02501DF4A009D0846 /* SearchInputViewControllerViewModel.swift */; };
+		164E96C32501DF58009D0846 /* SearchResultViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C22501DF58009D0846 /* SearchResultViewControllerViewModel.swift */; };
+		164E96C52501DF67009D0846 /* FavoritesViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164E96C42501DF67009D0846 /* FavoritesViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +43,13 @@
 		164E96B224FF613E009D0846 /* ConvertResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertResult.swift; sourceTree = "<group>"; };
 		164E96B424FF6153009D0846 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		164E96B624FF615E009D0846 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		164E96B82501DEB8009D0846 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		164E96BA2501DF11009D0846 /* SearchInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputViewController.swift; sourceTree = "<group>"; };
+		164E96BC2501DF28009D0846 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		164E96BE2501DF3C009D0846 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		164E96C02501DF4A009D0846 /* SearchInputViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputViewControllerViewModel.swift; sourceTree = "<group>"; };
+		164E96C22501DF58009D0846 /* SearchResultViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewControllerViewModel.swift; sourceTree = "<group>"; };
+		164E96C42501DF67009D0846 /* FavoritesViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +102,9 @@
 		164E96A924FF6090009D0846 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				164E96C02501DF4A009D0846 /* SearchInputViewControllerViewModel.swift */,
+				164E96C22501DF58009D0846 /* SearchResultViewControllerViewModel.swift */,
+				164E96C42501DF67009D0846 /* FavoritesViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -95,6 +112,9 @@
 		164E96AA24FF6097009D0846 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				164E96BA2501DF11009D0846 /* SearchInputViewController.swift */,
+				164E96BC2501DF28009D0846 /* SearchResultViewController.swift */,
+				164E96BE2501DF3C009D0846 /* FavoritesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				164E96B424FF6153009D0846 /* Extension+String.swift */,
+				164E96B82501DEB8009D0846 /* Extension+UIViewController.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -196,15 +217,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164E96BF2501DF3C009D0846 /* FavoritesViewController.swift in Sources */,
 				164E96B724FF615E009D0846 /* Photos.swift in Sources */,
+				164E96C32501DF58009D0846 /* SearchResultViewControllerViewModel.swift in Sources */,
 				164E96B524FF6153009D0846 /* Extension+String.swift in Sources */,
+				164E96BB2501DF11009D0846 /* SearchInputViewController.swift in Sources */,
+				164E96C12501DF4A009D0846 /* SearchInputViewControllerViewModel.swift in Sources */,
 				164E96B124FF6134009D0846 /* FilckrPhotoAPI.swift in Sources */,
 				164BC4AB24FF470F0092FD43 /* ViewController.swift in Sources */,
 				164BC4B124FF470F0092FD43 /* FlickrPhoto.xcdatamodeld in Sources */,
 				164BC4A724FF470F0092FD43 /* AppDelegate.swift in Sources */,
 				164E96AF24FF6125009D0846 /* HttpTask.swift in Sources */,
 				164E96B324FF613E009D0846 /* ConvertResult.swift in Sources */,
+				164E96B92501DEB8009D0846 /* Extension+UIViewController.swift in Sources */,
+				164E96BD2501DF28009D0846 /* SearchResultViewController.swift in Sources */,
 				164BC4A924FF470F0092FD43 /* SceneDelegate.swift in Sources */,
+				164E96C52501DF67009D0846 /* FavoritesViewControllerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
