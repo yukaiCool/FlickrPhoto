@@ -13,7 +13,7 @@
 "ButtonSearchInputSearch" = "搜尋";
 
 // MARK: - ---- 搜尋結果頁面 ----
-"" = "";
+"NavigationItemSearchResultTitle" = "搜尋結果";
 
 // MARK: - ---- 我的最愛頁面 ----
 "" = "";

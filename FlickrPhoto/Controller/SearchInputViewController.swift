@@ -66,6 +66,7 @@ class SearchInputViewController: UIViewController {
     func pushToSearchResultPage(_ model: Photos) {
         guard let controller = storyboard?.instantiateViewController(withIdentifier: StoryBoardID.SearchResultViewController.rawValue) as? SearchResultViewController else { return }
         controller.viewModel.photosModel = model
+        controller.viewModel.searchName = textFieldSearchTitle.text ?? ""
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -94,11 +95,9 @@ extension SearchInputViewController: UITextFieldDelegate {
     // MARK: 輸入框文字改變時
     func textFieldDidChangeSelection(_ textField: UITextField) {
         guard (textFieldSearchTitle.text ?? "") != "" , (textFieldSearchCount.text ?? "") != "" else {
-            print("1")
             setupButton(isEnabled: false)
             return
         }
-        print("2")
         setupButton(isEnabled: true)
     }
     

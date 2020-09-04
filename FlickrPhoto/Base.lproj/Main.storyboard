@@ -4,20 +4,53 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Result View Controller-->
+        <!--Title-->
         <scene sceneID="o3R-aa-hJP">
             <objects>
                 <viewController storyboardIdentifier="SearchResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pb6-Nd-vsp" customClass="SearchResultViewController" customModule="FlickrPhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hFx-fc-lo2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OFS-rA-jIV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LZc-R7-5Yp">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ResultCell" id="MkB-tO-iox" customClass="SearchResultCollectionViewCell" customModule="FlickrPhoto" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oAH-1n-KuJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OFS-rA-jIV" firstAttribute="top" secondItem="lWP-56-cGD" secondAttribute="top" id="0Um-3q-Iho"/>
+                            <constraint firstItem="OFS-rA-jIV" firstAttribute="leading" secondItem="lWP-56-cGD" secondAttribute="leading" id="4VX-FZ-kUt"/>
+                            <constraint firstItem="lWP-56-cGD" firstAttribute="trailing" secondItem="OFS-rA-jIV" secondAttribute="trailing" id="fVx-WS-dJe"/>
+                            <constraint firstItem="lWP-56-cGD" firstAttribute="bottom" secondItem="OFS-rA-jIV" secondAttribute="bottom" id="j8v-cY-MUo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lWP-56-cGD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="0bG-Nq-xew"/>
+                    <navigationItem key="navigationItem" title="Title" id="vod-k1-6Jb"/>
+                    <connections>
+                        <outlet property="collectionView" destination="OFS-rA-jIV" id="r6l-hS-izL"/>
+                        <outlet property="navigationItemTitle" destination="vod-k1-6Jb" id="hVc-jp-zjX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Eh-8q-cSf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

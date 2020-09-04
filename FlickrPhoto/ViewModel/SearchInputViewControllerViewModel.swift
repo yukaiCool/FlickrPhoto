@@ -16,6 +16,7 @@ class SearchInputViewControllerViewModel {
     // MARK: get photo
     func getPhoto(searchName: String, perPage: Int) {
         FilckrPhotpAPI.getPhoto(model: Photos(),searchName: searchName, page: 1, perPage: perPage) { (model) in
+            print("Get Photo Success...")
             self.onGetEnd?(model)
         }
     }
