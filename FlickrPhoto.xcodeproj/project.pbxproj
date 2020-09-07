@@ -139,6 +139,7 @@
 		164E96AA24FF6097009D0846 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				164E96DC2506156C009D0846 /* Cell */,
 				164E96DA250230CF009D0846 /* TabBarViewController.swift */,
 				164E96BA2501DF11009D0846 /* SearchInputViewController.swift */,
 				164E96BC2501DF28009D0846 /* SearchResultViewController.swift */,
@@ -151,8 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				164E96B624FF615E009D0846 /* Photos.swift */,
-				164E96CE2501F0B4009D0846 /* SearchResultCollectionViewCell.swift */,
-				164E96CF2501F0B4009D0846 /* SearchResultCollectionViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +177,15 @@
 				164E96B224FF613E009D0846 /* ConvertResult.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		164E96DC2506156C009D0846 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				164E96CE2501F0B4009D0846 /* SearchResultCollectionViewCell.swift */,
+				164E96CF2501F0B4009D0846 /* SearchResultCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		79D80ACBBB129E97647B8562 /* Pods */ = {
